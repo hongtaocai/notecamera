@@ -8,7 +8,7 @@ app = Flask(__name__)
 def hello():
     try:
         pic = request.files['image'];
-        print pic
+        #print pic
         image = Image.open(pic);
         text = image_to_string(image);
         return text+"\n"
@@ -16,5 +16,5 @@ def hello():
         return "Hello World"
 
 if __name__ == "__main__":
-    app.debug = True
-    app.run()
+    #app.debug = True
+    app.run(port=6501)
