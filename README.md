@@ -1,0 +1,3 @@
+# notecamera
+
+Backend for CameraNote
